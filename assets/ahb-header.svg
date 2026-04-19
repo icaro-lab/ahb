@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
+  <title id="title">Adversarial Humanities Benchmark</title>
+  <desc id="desc">A restrained header image for AHB with layered manuscript lines and benchmark grid marks.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121417"/>
+      <stop offset="0.52" stop-color="#202426"/>
+      <stop offset="1" stop-color="#34302a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d9b86f"/>
+      <stop offset="1" stop-color="#f1dfaa"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="520" fill="url(#bg)"/>
+  <g opacity="0.24" stroke="#f1dfaa" stroke-width="1">
+    <path d="M120 104H1480"/>
+    <path d="M120 176H1480"/>
+    <path d="M120 248H1480"/>
+    <path d="M120 320H1480"/>
+    <path d="M120 392H1480"/>
+    <path d="M260 72V448"/>
+    <path d="M520 72V448"/>
+    <path d="M780 72V448"/>
+    <path d="M1040 72V448"/>
+    <path d="M1300 72V448"/>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="128" y="92" width="515" height="336" rx="18" fill="#efe7d4"/>
+    <path d="M180 156H590M180 202H558M180 248H604M180 294H545M180 340H578" stroke="#6e5b3f" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+    <path d="M196 386H438" stroke="#b58d42" stroke-width="12" stroke-linecap="round"/>
+    <rect x="665" y="92" width="807" height="336" rx="18" fill="#171a1c" stroke="#d9b86f" stroke-width="2"/>
+    <g fill="none" stroke="#d9b86f" stroke-width="3" opacity="0.9">
+      <path d="M730 162H1060"/>
+      <path d="M730 222H1284"/>
+      <path d="M730 282H1176"/>
+      <path d="M730 342H1378"/>
+    </g>
+    <g fill="#f1dfaa">
+      <circle cx="700" cy="162" r="7"/>
+      <circle cx="700" cy="222" r="7"/>
+      <circle cx="700" cy="282" r="7"/>
+      <circle cx="700" cy="342" r="7"/>
+    </g>
+  </g>
+  <text x="128" y="66" fill="url(#gold)" font-family="Georgia, 'Times New Roman', serif" font-size="34" letter-spacing="0">Adversarial Humanities Benchmark</text>
+  <text x="682" y="404" fill="#f8f2df" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="0">AHB</text>
+  <text x="780" y="404" fill="#d9b86f" font-family="Inter, Arial, sans-serif" font-size="22" letter-spacing="0">transformed prompts for LLM safety evaluation</text>
+</svg>

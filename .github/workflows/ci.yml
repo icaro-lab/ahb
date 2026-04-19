@@ -20,5 +20,5 @@ jobs:
           python-version: "3.11"
       - name: Syntax check
         run: python -m py_compile ahb_eval/*.py scripts/*.py
-      - name: Prompt template JSON check
-        run: python -m json.tool prompt_templates/method_prompts.json >/dev/null
+      - name: README/header presence check
+        run: test -f README.md && test -f assets/ahb-header.svg

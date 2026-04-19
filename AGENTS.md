@@ -5,8 +5,8 @@ Scope: applies to this repository.
 ## Repo Model
 
 - This is the public release repository for the Adversarial Humanities Benchmark.
-- Keep the committed surface close to the HLE public benchmark pattern: README, license, citation, requirements, images, evaluation scripts, and concise public prompt-template examples.
-- Do not commit raw private experiment runs, model responses, judge outputs, local credentials, or generated Hugging Face staging payloads.
+- Keep the committed surface close to the HLE public benchmark pattern: README, license, citation, requirements, header asset, and evaluation scripts.
+- Do not commit raw private experiment runs, model responses, judge outputs, local credentials, methodology/templates used to transform source prompts, `.project/`, or generated Hugging Face staging payloads.
 - `hf_dataset/` is local-only staging for the Hugging Face dataset repository and is ignored by git.
 
 ## Dataset Publication

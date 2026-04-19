@@ -18,6 +18,9 @@ __pycache__/
 # Local Hugging Face publication staging
 hf_dataset/
 
+# Local agent/project state
+.project/
+
 # Local evaluation outputs
 ahb_*.json
 judged_ahb_*.json
