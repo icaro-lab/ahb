@@ -1,0 +1,7 @@
+datasets>=3.0.0
+numpy>=1.26
+openai>=1.50.0
+pandas>=2.0
+pyarrow>=16.0
+pydantic>=2.0
+tqdm>=4.66

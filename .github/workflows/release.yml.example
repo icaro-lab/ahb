@@ -1,0 +1,17 @@
+name: Release
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  release-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Example release gates
+        run: |
+          python -m py_compile ahb_eval/*.py scripts/*.py
+          python -m json.tool prompt_templates/method_prompts.json >/dev/null
+          echo "HF publication is gated manually until an authorized token is available."

@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.ruff_cache/
+.pytest_cache/
+
+# Local credentials
+.env
+.envrc
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Local Hugging Face publication staging
+hf_dataset/
+
+# Local evaluation outputs
+ahb_*.json
+judged_ahb_*.json

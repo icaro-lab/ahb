@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - dev
+      - main
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Example project verification
+        run: |
+          python -m py_compile ahb_eval/*.py scripts/*.py
+          python -m json.tool prompt_templates/method_prompts.json >/dev/null
