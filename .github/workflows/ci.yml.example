@@ -14,4 +14,4 @@ jobs:
       - name: Example project verification
         run: |
           python -m py_compile ahb_eval/*.py scripts/*.py
-          test -f README.md && test -f assets/ahb-header.svg
+          test -f README.md && test -f assets/ahb-header.png

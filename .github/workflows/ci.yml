@@ -21,4 +21,4 @@ jobs:
       - name: Syntax check
         run: python -m py_compile ahb_eval/*.py scripts/*.py
       - name: README/header presence check
-        run: test -f README.md && test -f assets/ahb-header.svg
+        run: test -f README.md && test -f assets/ahb-header.png
