@@ -1,7 +1,10 @@
-@misc{icaro2026ahb,
-  title = {Adversarial Humanities Benchmark},
-  author = {{Icaro Lab}},
+@misc{galisai2026adversarialhumanitiesbenchmark,
+  title = {Adversarial Humanities Benchmark: Results on Stylistic Robustness in Frontier Model Safety},
+  author = {Galisai, Marcello and Cifani, Susanna and Giarrusso, Francesco and Bisconti, Piercosma and Prandi, Matteo and Pierucci, Federico and Sartore, Federico and Nardi, Daniele},
   year = {2026},
-  howpublished = {\url{https://github.com/icaro-lab/ahb}},
-  note = {Dataset: \url{https://huggingface.co/datasets/icaro-lab/ahb}}
+  eprint = {2604.18487},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CL},
+  url = {https://arxiv.org/abs/2604.18487},
+  note = {Website: \url{https://ahb.icaro-lab.com}; Dataset: \url{https://huggingface.co/datasets/icaro-lab/ahb}; Code: \url{https://github.com/icaro-lab/ahb}}
 }
