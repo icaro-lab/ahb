@@ -18,7 +18,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Install package
+        run: python -m pip install -e ".[test]"
       - name: Syntax check
-        run: python -m py_compile ahb_eval/*.py scripts/*.py
+        run: python -m compileall ahb_eval scripts src tests
+      - name: Tests
+        run: python -m pytest
       - name: README/header presence check
         run: test -f README.md && test -f assets/ahb-header.png
