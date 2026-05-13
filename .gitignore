@@ -24,3 +24,4 @@ hf_dataset/
 # Local evaluation outputs
 ahb_*.json
 judged_ahb_*.json
+logs/
