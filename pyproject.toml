@@ -15,6 +15,7 @@ authors = [
 dependencies = [
   "datasets>=3.0.0",
   "inspect-ai>=0.3.220",
+  "openai>=1.50.0",
 ]
 
 [project.optional-dependencies]
