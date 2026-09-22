@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ahb-inspect"
-version = "0.1.1"
+version = "0.1.2"
 description = "Inspect AI task package for the Adversarial Humanities Benchmark"
 readme = "README.md"
 requires-python = ">=3.11"

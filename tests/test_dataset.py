@@ -89,6 +89,32 @@ def test_local_full_split_uses_digest_bound_jsonl_and_normalized_samples(tmp_pat
         assert loaded[index] == record_to_sample(rows[index])
 
 
+def test_private_full_split_requires_exact_identity_and_all_rows(tmp_path):
+    rows = [_local_record(index) for index in range(7047)]
+    artifact = tmp_path / "ahb-private.jsonl"
+    raw = "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows).encode()
+    artifact.write_bytes(raw)
+    binding = {
+        "dataset": dataset_module.PRIVATE_DATASET,
+        "revision": dataset_module.PRIVATE_DATASET_REVISION,
+        "artifact_profile": dataset_module.PRIVATE_ARTIFACT_PROFILE,
+        "artifact_path": artifact,
+        "artifact_sha256": hashlib.sha256(raw).hexdigest(),
+    }
+    loaded = dataset_module.load_ahb_dataset(**binding)
+    assert len(loaded) == 7047
+    assert loaded[0] == record_to_sample(rows[0])
+    assert loaded[-1] == record_to_sample(rows[-1])
+    with pytest.raises(ValueError, match="pinned dataset, split, and revision"):
+        dataset_module.load_ahb_dataset(**{**binding, "dataset": "icaro-lab/ahb"})
+    with pytest.raises(ValueError, match="pinned local artifact"):
+        dataset_module.load_ahb_dataset(
+            dataset=dataset_module.PRIVATE_DATASET,
+            revision=dataset_module.PRIVATE_DATASET_REVISION,
+            artifact_profile=dataset_module.PRIVATE_ARTIFACT_PROFILE,
+        )
+
+
 def test_local_dataset_artifact_rejects_digest_drift_and_wrong_count(tmp_path):
     artifact = tmp_path / "ahb-test.jsonl"
     artifact.write_text(json.dumps(_local_record(0)) + "\n", encoding="utf-8")
