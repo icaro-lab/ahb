@@ -1,0 +1,17 @@
+{
+  "schema": "ahb-inspect-jev-deployment-v1",
+  "transport": "openrouter-decisions",
+  "endpoint": "https://openrouter.ai/api/alpha/decisions",
+  "requested_model": "typesafe/jev-1.13",
+  "resolved_model": "typesafe/jev-1.13-20260917",
+  "provider": "TypeSafe",
+  "provider_policy": {
+    "zdr": true,
+    "data_collection": "deny",
+    "allow_fallbacks": false
+  },
+  "api_key_env": "OPENROUTER_API_KEY",
+  "trust_env": false,
+  "follow_redirects": false,
+  "timeout_seconds": 30
+}

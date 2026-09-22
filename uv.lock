@@ -11,10 +11,11 @@ resolution-markers = [
 
 [[package]]
 name = "ahb-inspect"
-version = "0.1.0"
+version = "0.1.1"
 source = { editable = "." }
 dependencies = [
     { name = "datasets" },
+    { name = "httpx" },
     { name = "inspect-ai" },
     { name = "openai" },
 ]
@@ -27,6 +28,7 @@ test = [
 [package.metadata]
 requires-dist = [
     { name = "datasets", specifier = ">=3.0.0" },
+    { name = "httpx", specifier = ">=0.27" },
     { name = "inspect-ai", specifier = ">=0.3.220" },
     { name = "openai", specifier = ">=1.50.0" },
     { name = "pytest", marker = "extra == 'test'", specifier = ">=8.0" },
