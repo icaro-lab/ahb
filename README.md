@@ -133,4 +133,4 @@ By default, the Inspect task pins the Hugging Face dataset revision to `007d9584
 
 If you use AHB in your research, please cite the benchmark. The full citation is available in [`citation.txt`](./citation.txt).
 
-For inquiries or feedback, contact Icaro Lab.
+For inquiries or feedback, contact [Icaro Lab](mailto:hello@icarofoundation.org), the research laboratory of [Icaro Foundation](https://www.icarofoundation.org/). See the Foundation's [legal identity and governance](https://www.icarofoundation.org/transparency/).
